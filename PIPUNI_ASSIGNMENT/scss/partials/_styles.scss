@@ -1,0 +1,159 @@
+*, *::after, *::before{
+    box-sizing: border-box;
+}
+body, html{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: $primaryFont;
+    font-size: 0.875rem;
+    color: $secondaryColor;
+}
+h2{
+    font-size: 1.5rem;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+.mainWrapper{
+    height: 100%;
+}
+.container{
+    width: 83%;
+    margin: 0 auto;
+    padding: 0 0.9375em;
+    position: relative;
+}
+.row{
+    margin:  0 -0.9375em;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.col-12{
+    width: 100%;
+    float: 0 0 100%;
+    padding: 0 0.9375em;
+}
+.flex-center{
+    display: flex;
+    align-items: center;
+}
+.covidAlert{
+    background-color: $primaryColor;
+    padding: 0.9375rem 0;
+    span{
+        float: right;
+        cursor: pointer;
+        margin-left: 20px;
+    }
+}
+
+
+/** Logo**/
+
+.logoImage{
+    margin: 0 15px;
+    display: block;
+    line-height: 0;
+}
+.mainContent{
+    height: 100%;
+    position: relative;
+    background-color: $backgroundColor;
+}
+.overlap{
+    width: 100%;
+    
+}
+
+
+/** Background**/
+.backgroundImage{
+  
+        width: 100%;
+        height: 100vh;
+        display: block;
+}
+
+
+
+/** Flights reservation section**/
+.reservation{
+    padding: 35px;
+    border-radius: 5px;
+    background-color: #FFF;
+    width: 100%;
+    left: 0;
+    box-shadow: 0 0 10px rgba(0,0,0,0.16);
+    .reservationTitle{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        h2{
+            font-weight: 400;
+        }
+        span{
+            margin-left: auto;
+        }
+    }
+}
+.form-group{
+    margin-bottom: 20px;
+    &.radio{
+        padding: 5px 20px 20px 0;
+        margin-right: 15px;
+        margin-bottom: 10px;
+        input[type="radio"]{
+            display: none;
+            &:checked ~ label{
+                &::after{
+                    background-color: $secondaryColor;
+                }
+            }
+        }
+        label{
+            position: relative;
+            padding-left: 30px;
+            margin-right: 15px;
+            &::after{
+                content: '';
+                position: absolute;
+                left: 0;
+                width: 20px;
+                height: 20px;
+                border-radius: 50%;
+                border: 1px $secondaryColor solid;
+            }
+        }
+    }
+    label{
+        font-size: 0.875rem;
+    }
+    input{
+        border: 1px $secondaryColor solid;
+        width: 100%;
+        padding: 7px 10px;
+        color: $secondaryColor;
+        font-size: 1rem;
+        border-radius: 0.1875em;
+        &:active, &:focus{
+            outline: none;
+        }
+    }
+}
+
+
+/** Date Picker**/
+.datepicker{
+    position: relative;
+    img{
+        position: absolute;
+        width: 24px;
+        height: 24px;
+        right: 20px;
+        bottom: 5px;
+    }
+}

@@ -1,0 +1,41 @@
+/** Menu Section**/
+
+.mainMenu{
+    top: 100%;
+    left: 0;
+    width: 100%;
+    &.showMenu{
+        display: block;
+    }
+    .mainNavigation{
+        padding-left: 0;
+        list-style: none;
+        width: 100%;
+        margin: 0;
+        background-color: #FFF;
+        li{
+            a{
+                color: $textColor;
+                text-decoration: none;
+                padding: 10px;
+                display: block;
+                border-bottom: 1px #ededed solid;
+            }
+        }
+    }
+    
+    &:after {
+      //content: '';
+      //position: absolute;
+      background: $bgColorLiAfter;
+//      top: 0;
+//      left: 0;
+//      width: 0;
+//      height: 100%;
+//      z-index: 0;
+//      @include transition;
+//      border-top-right-radius: $radius;
+//      border-bottom-right-radius: $radius;
+    }
+    
+}

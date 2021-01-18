@@ -1,0 +1,393 @@
+@media screen and (max-width: 425px) {
+  .container {
+    width: 610px;
+  }
+
+  .col-md-6 {
+    flex: 0 0 50%;
+  }
+
+  .col-md-12 {
+    flex: 0 0 100%;
+  }
+
+  .radioButtons {
+    display: block !important;
+  }
+
+  .mainMenu {
+    display: none;
+    position: absolute;
+  }
+}
+@media screen and (min-width: 640px) {
+  .container {
+    width: 610px;
+  }
+
+  .col-md-6 {
+    flex: 0 0 50%;
+  }
+
+  .col-md-12 {
+    flex: 0 0 100%;
+  }
+
+  .radioButtons {
+    flex-direction: column;
+  }
+
+  .mainMenu {
+    display: none;
+    position: absolute;
+  }
+}
+@media screen and (min-width: 992px) {
+  .container {
+    width: 990px;
+  }
+
+  .overlap {
+    position: absolute;
+    top: 300px;
+    width: 100%;
+  }
+
+  .menuToggle {
+    display: none;
+  }
+
+  .mainMenu {
+    display: block;
+    position: static;
+  }
+  .mainMenu .mainNavigation {
+    display: flex;
+  }
+  .mainMenu .mainNavigation li a {
+    border: none;
+  }
+
+  .header .profileDropdown .name {
+    display: block;
+  }
+}
+@media screen and (min-width: 1140px) {
+  .container {
+    width: 1200px;
+  }
+
+  .col-lg-3 {
+    flex: 0 0 25%;
+  }
+
+  .col-lg-6 {
+    flex: 0 0 50%;
+  }
+
+  .reservationBlock {
+    padding: 50px;
+  }
+
+  .overlap {
+    top: 440px;
+  }
+}
+*, *::after, *::before {
+  box-sizing: border-box;
+}
+
+body, html {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  font-size: 0.875rem;
+  color: #696969;
+}
+
+h2 {
+  font-size: 1.5rem;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+.mainWrapper {
+  height: 100%;
+}
+
+.container {
+  width: 83%;
+  margin: 0 auto;
+  padding: 0 0.9375em;
+  position: relative;
+}
+
+.row {
+  margin: 0 -0.9375em;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.col-12 {
+  width: 100%;
+  float: 0 0 100%;
+  padding: 0 0.9375em;
+}
+
+.flex-center {
+  display: flex;
+  align-items: center;
+}
+
+.covidAlert {
+  background-color: #0ad1be;
+  padding: 0.9375rem 0;
+}
+.covidAlert span {
+  float: right;
+  cursor: pointer;
+  margin-left: 20px;
+}
+
+/** Logo**/
+.logoImage {
+  margin: 0 15px;
+  display: block;
+  line-height: 0;
+}
+
+.mainContent {
+  height: 100%;
+  position: relative;
+  background-color: #ecf0f3;
+}
+
+.overlap {
+  width: 100%;
+}
+
+/** Background**/
+.backgroundImage {
+  width: 100%;
+  height: 100vh;
+  display: block;
+}
+
+/** Flights reservation section**/
+.reservation {
+  padding: 35px;
+  border-radius: 5px;
+  background-color: #FFF;
+  width: 100%;
+  left: 0;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.16);
+}
+.reservation .reservationTitle {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.reservation .reservationTitle h2 {
+  font-weight: 400;
+}
+.reservation .reservationTitle span {
+  margin-left: auto;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+.form-group.radio {
+  padding: 5px 20px 20px 0;
+  margin-right: 15px;
+  margin-bottom: 10px;
+}
+.form-group.radio input[type=radio] {
+  display: none;
+}
+.form-group.radio input[type=radio]:checked ~ label::after {
+  background-color: #696969;
+}
+.form-group.radio label {
+  position: relative;
+  padding-left: 30px;
+  margin-right: 15px;
+}
+.form-group.radio label::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 1px #696969 solid;
+}
+.form-group label {
+  font-size: 0.875rem;
+}
+.form-group input {
+  border: 1px #696969 solid;
+  width: 100%;
+  padding: 7px 10px;
+  color: #696969;
+  font-size: 1rem;
+  border-radius: 0.1875em;
+}
+.form-group input:active, .form-group input:focus {
+  outline: none;
+}
+
+/** Date Picker**/
+.datepicker {
+  position: relative;
+}
+.datepicker img {
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  right: 20px;
+  bottom: 5px;
+}
+
+header {
+  box-shadow: 2px 0 2px rgba(0, 0, 0, 0.16);
+  padding: 10px 0;
+  position: relative;
+  z-index: 99;
+}
+
+.header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.header .menuToggle {
+  cursor: pointer;
+  font-size: 1.375rem;
+  padding: 3px;
+}
+.header .accountSection {
+  margin-left: auto;
+  min-width: 150px;
+}
+.header .profileDropdown {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  cursor: pointer;
+  justify-content: flex-end;
+}
+.header .profileDropdown .name {
+  text-align: right;
+  margin-left: 20px;
+}
+.header .profileDropdown .name small {
+  display: block;
+  font-size: 0.5rem;
+  width: 60px;
+}
+.header .profileDropdown .image img {
+  width: 36px;
+  height: 36px;
+  background-clip: cover;
+  border-radius: 50%;
+  margin-left: 15px;
+}
+
+/** User Profile Section**/
+.userProfile {
+  position: relative;
+}
+.userProfile .dropDown {
+  position: absolute;
+  background-color: #FFF;
+  width: 100%;
+  display: none;
+  right: 0;
+}
+.userProfile .dropDown.showMenu {
+  display: block;
+}
+.userProfile .dropDown ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.userProfile .dropDown ul li a {
+  color: #000;
+  text-decoration: none;
+  padding: 10px;
+  display: block;
+  border-bottom: 1px solid #ededed;
+}
+
+/** Menu Section**/
+.mainMenu {
+  top: 100%;
+  left: 0;
+  width: 100%;
+}
+.mainMenu.showMenu {
+  display: block;
+}
+.mainMenu .mainNavigation {
+  padding-left: 0;
+  list-style: none;
+  width: 100%;
+  margin: 0;
+  background-color: #FFF;
+}
+.mainMenu .mainNavigation li a {
+  color: #000;
+  text-decoration: none;
+  padding: 10px;
+  display: block;
+  border-bottom: 1px #ededed solid;
+}
+.mainMenu:after {
+  background: #0ad1be;
+}
+
+/** Rado Buttons**/
+.radioButtons {
+  display: flex;
+  flex-direction: row;
+}
+
+.button {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  background-color: #0ad1be;
+  border: 1px #0ad1be solid;
+  border-radius: 0.25em;
+  padding: 0.625em 1.5625em;
+}
+.button:active, .button:focus, .button:hover {
+  outline: none;
+  background-color: #09b9a8;
+  border-color: #09b9a8;
+  cursor: pointer;
+}
+.button.block {
+  display: block;
+  width: 100%;
+}
+
+.align-end {
+  align-items: flex-end;
+}
+
+.bodyContent {
+  height: 100%;
+  min-height: 500px;
+  background-color: #ecf0f3;
+}
+
+/*# sourceMappingURL=style.css.map */

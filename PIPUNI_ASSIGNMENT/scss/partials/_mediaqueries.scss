@@ -1,0 +1,93 @@
+// Small Screens (phones)
+@media screen and (max-width:425px){
+    .container{
+        width: 610px;
+    }
+    .col-md-6{
+        flex: 0 0 50%;
+    }
+    .col-md-12{
+        flex: 0 0 100%;
+    }
+    .radioButtons{
+        display: block !important;
+    }
+    .mainMenu{
+    display: none;
+    position: absolute;
+    }
+}
+
+// Medium Screens (tab/iPad)
+@media screen and (min-width:640px){
+    .container{
+        width: 610px;
+    }
+    .col-md-6{
+        flex: 0 0 50%;
+    }
+    .col-md-12{
+        flex: 0 0 100%;
+    }
+    .radioButtons{
+        flex-direction: column;
+    }
+    .mainMenu{
+    display: none;
+    position: absolute;
+    }
+}
+
+// Large Screens (laptop screen)
+@media screen and (min-width:992px){
+    .container{
+        width: 990px;
+    }
+    .overlap{
+        position: absolute;
+        top: 300px;
+        width: 100%;
+    }
+    .menuToggle{
+        display: none;
+    }
+    .mainMenu{
+        display: block;
+        position: static;
+        .mainNavigation{
+            display: flex;
+             li {
+                a{
+                    border: none;
+                }
+             }
+        }
+    }
+    .header{
+        .profileDropdown{
+            .name{
+                display: block;
+            }
+        }
+    }
+    
+}
+
+//Extra-Large Screens (desktop)
+@media screen and (min-width:1140px){
+    .container{
+        width: 1200px;
+    }
+    .col-lg-3{
+        flex: 0 0 25%;
+    }
+    .col-lg-6{
+        flex: 0 0 50%;
+    }
+    .reservationBlock{
+        padding: 50px;
+    }
+    .overlap{
+        top: 440px;
+    }
+}

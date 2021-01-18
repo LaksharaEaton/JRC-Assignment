@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.4.1/css/simple-line-icons.css">
+   
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/themes/flick/jquery-ui.min.css">
+
+    <title>Pipuni Lakshara Eaton | JRC Interviev Assignment | 17-01-2021</title>
+    <link rel="logo icon" type="icon/svg" href="./assets/icons/logo.svg"/>
+</head>
+<body>
+
+<div class="mainWrapper" id="mainWrapper">
+    <div class="covidAlert">
+        <div class="container flex-center">
+            For Covid-19 related assistance, please click here. For any other assistance, you can contact our local Airlines reservation and ticketing offices.
+            <span><i class="fas fa-times"></i></span>
+        </div>
+    </div>
+    <header>
+        <div class="container">
+            <div class="header">
+                <span class="menuToggle" id="menuToggle">
+                    <i class="icons icon-menu"></i>
+                </span>
+                <a href="#" class="logoImage">
+                    <img src="./assets/icons/logo.svg" alt="Logo">
+                </a>
+                <nav class="mainMenu">
+                    <ul class="mainNavigation">
+                        <li><a href="#">Plan travel</a></li>
+                        <li><a href="#">Flying with us</a></li>
+                        <li><a href="#">Travel information</a></li>
+                        <li><a href="#">Discover</a></li>
+                        <li><a href="#">Journey</a></li>
+                    </ul>
+                </nav>
+                <div class="userProfile">
+                    <div class="profileDropdown">
+                        <span class="arrow">
+                            <i class="icon-arrow-down icons"></i>
+                        </span>
+                        <span class="name">
+                            <small>Welcome back</small>
+                            <span>John</span>
+                        </span>
+                        <span class="image">
+                            <img src="./assets/img/profile-image.jpg" alt="Profile picture" >
+                        </span>
+                    </div>
+                    <div class="dropDown">
+                        <ul>
+                            <li><a href="#">My Profile</a></li>
+                            <li><a href="#">Account Settings</a></li>
+                            <li><a href="#">Notifications</a></li>
+                            <li><a href="#">Log out</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="mainContent">
+        <div class="background">
+            <img class="backgroundImage"  src="./assets/img/background-image.jpg" alt="backgroundimage">
+            <div class="overlap">
+                <div class="container">
+                    <div class="reservation">
+                        <div class="reservationTitle">
+                            <h2>Reserve Your Flight & Boarding Today</h2>
+                            <span><img src="./assets/icons/plane.svg" alt=""></span>
+                        </div>
+                        <div class="resBody">
+                            <div class="radioButtons">
+                                <div class="radio form-group">
+                                    <input type="radio" checked name="type" id="roundTrip" />
+                                    <label for="roundTrip">Round Trip</label>
+                                </div>
+                                <div class="radio form-group">
+                                    <input type="radio" name="type" id="oneWay" />
+                                    <label for="oneWay">One Way</label>
+                                </div>
+                                <div class="radio form-group">
+                                    <input type="radio" name="type" id="multyCity" />
+                                    <label for="multyCity">Multi-city</label>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="form-group col-12 col-md-6 col-lg-3">
+                                    <label for="departFrom">Depart from</label>
+                                    <input type="text" name="departFrom" id="departFrom" />
+                                </div>
+                                <div class="form-group col-12 col-md-6 col-lg-3">
+                                    <label for="arrive">Arriving at</label>
+                                    <input type="text" name="arrive" id="arrive" />
+                                </div>
+                                <div class="form-group datepicker col-12 col-md-6 col-lg-3">
+                                    <label for="datepickerStart">Depart date</label>
+                                    <input type="text" name="dDate" id="datepickerStart" />
+                                </div>
+                                <div class="form-group datepicker col-12 col-md-6 col-lg-3">
+                                    <label for="datepickerEnd">Return date</label>
+                                    <input type="text" name="rDate" id="datepickerEnd" />
+                                </div>
+                            </div>
+                            <div class="row align-end">
+                                <div class="form-group col-12 col-md-6 col-lg-3">
+                                    <label for="departFrom">No. of passengers</label>
+                                    <input type="text" name="passengers" id="passengers" />
+                                </div>
+                                <div class="form-group col-12 col-md-6 col-lg-3">
+                                    <label for="arrive">Promo code</label>
+                                    <input type="text" name="pCode" id="pCode" />
+                                </div>
+                                <div class="form-group col-12 col-md-12 col-lg-6">
+                                    <button class="button block">SEARCH FLIGHTS</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="bodyContent">
+
+        </div>
+    </section>
+</div>
+    
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+<script>
+    $(function(){
+        $('.covidAlert span').click(function(){
+            $('.covidAlert').hide();
+        })
+        $('#menuToggle').click(function(){
+            $('.mainMenu').toggleClass('showMenu');
+        })
+        $('.profileDropdown').click(function(){
+            $('.dropDown').toggleClass('showMenu');
+        })
+        $('#datepickerStart').datepicker({
+            showOn: "both",
+            buttonImage: "./assets/icons/calander.svg",
+            buttonImageOnly: true,
+            buttonText: "Select date"
+        });
+        $('#datepickerEnd').datepicker({
+            showOn: "both",
+            buttonImage: "./assets/icons/calander.svg",
+            buttonImageOnly: true,
+            buttonText: "Select date"
+        });
+
+    })
+</script>
+</html>
